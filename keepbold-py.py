@@ -2,20 +2,6 @@ import os  # for directory/file access
 from pathlib import Path  # for path access
 from bs4 import BeautifulSoup
 
-html = """
-<table style="position:absolute; border: textbox 1px solid; writing-mode:lr-tb; left:45px; top:81px; width:127px; height:9px;">
-    <h1 style="font-family: EICMDA+AdvTrebu-R; font-size:8px">Journal of     Infection (2015) 
-    </h1>
-    <h2 style="font-family: EICMDB+AdvTrebu-B; font-size:8px">xx</h2>
-    <h3 style="font-family: EICMDA+AdvTrebu-R; font-size:8px">, 1</h3>
-    <h4 style="font-family: EICMDD+AdvPS44A44B; font-size:7px">e</h4>
-    <h5 style="font-family: EICMDA+AdvTrebu-R; font-size:8px">4
-    <br/>
-    </h5>
-</table>
-
-"""
-
 # packaging html-font-weight to <strong> python script into function
 def replacefw_tostrong(html_file_unfiltered):
     # 1st step - started small
